@@ -10,7 +10,7 @@ class args():
 	HEIGHT = 256
 	WIDTH = 256
 
-	save_fusion_model = "models/train/fusionnet/"
+	save_fusion_model = "./models/train/fusionnet/"
 	save_loss_dir = './models/train/loss_fusionnet/'
 
 	# save_fusion_model_noshort = "models/train/fusionnet_noshort/"
