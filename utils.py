@@ -3,7 +3,7 @@ import random
 import numpy as np
 import torch
 from args_fusion import args
-from scipy import misc
+from scipy.misc import imread, imsave, imresize
 import matplotlib as mpl
 
 from os import listdir
