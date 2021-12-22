@@ -75,6 +75,8 @@ def train(original_imgs_path, img_flag, alpha, w1, w2):
 	temp_path_model = os.path.join(args.save_fusion_model)
 	temp_path_loss  = os.path.join(args.save_loss_dir)
 	if os.path.exists(temp_path_model) is False:
+		print(os. getcwd())
+		print(temp_path_model)
 		os.mkdir(temp_path_model)
 
 	if os.path.exists(temp_path_loss) is False:
