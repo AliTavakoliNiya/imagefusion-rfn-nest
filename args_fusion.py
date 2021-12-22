@@ -4,8 +4,8 @@ class args():
 	# training args
 	epochs = 2 #"number of training epochs, default is 2"
 	batch_size = 4 #"batch size for training, default is 4"
-	dataset_ir = "path of KAIST infrared images"
-	dataset_vi = "path of KAIST visible images"
+	dataset_ir = "./images/21_pairs_tno/ir"
+	dataset_vi = "./images/21_pairs_tno/vis"
 
 	HEIGHT = 256
 	WIDTH = 256
