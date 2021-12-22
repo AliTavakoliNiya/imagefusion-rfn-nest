@@ -4,6 +4,9 @@ import numpy as np
 import torch
 from args_fusion import args
 from scipy.misc import imread, imsave, imresize
+
+
+
 import matplotlib as mpl
 
 from os import listdir
@@ -54,12 +57,12 @@ def load_dataset(image_path, BATCH_SIZE, num_imgs=None):
 
 def get_image(path, height=256, width=256, flag=False):
     if flag is True:
-        image = misc.imread(path, mode='RGB')
+        image = imread(path, mode='RGB')
     else:
-        image = misc.imread(path, mode='L')
+        image = imread(path, mode='L')
 
     if height is not None and width is not None:
-        image = misc.imresize(image, [height, width], interp='nearest')
+        image = imresize(image, [height, width], interp='nearest')
     return image
 
 
@@ -70,12 +73,12 @@ def get_test_image(paths, height=None, width=None, flag=False):
     images = []
     for path in paths:
         if flag is True:
-            image = misc.imread(path, mode='RGB')
+            image = imread(path, mode='RGB')
         else:
-            image = misc.imread(path, mode='L')
+            image = imread(path, mode='L')
         # get saliency part
         if height is not None and width is not None:
-            image = misc.imresize(image, [height, width], interp='nearest')
+            image = imresize(image, [height, width], interp='nearest')
 
         base_size = 512
         h = image.shape[0]
