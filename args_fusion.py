@@ -20,7 +20,7 @@ class args():
 	# save_loss_dir_onestage = './models/train/loss_fusionnet_onestage/'
 
 	image_size = 256 #"size of training images, default is 256 X 256"
-	cuda = 0 #"set it to 1 for running on GPU, 0 for CPU"
+	cuda = 1 #"set it to 1 for running on GPU, 0 for CPU"
 	seed = 42 #"random seed for training"
 
 	lr = 1e-4 #"learning rate, default is 0.001"
